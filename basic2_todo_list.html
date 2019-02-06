@@ -33,11 +33,7 @@
 <body>
 	<div id="box">
     <ul>
-            <li>remove item</li>
-            <li>remove item</li>
-            <li>remove item</li>
-            <li>remove item</li>
-            <li>remove item</li>
+            
     </ul>
 
      <input type="text" name="addlist" required>
@@ -47,25 +43,25 @@
 	<script>
 
 		$(document).ready(function(){
-			$('li').on('click',function(){
-				$(this).animate({
-					opacity:0.0,
-					paddingLeft: '+=80px',
-					paddingTop: '+=80px'
-				}, 500,function(){
-					$('this').remove();
-				}
-				)
+			
 
-			})
              
 			$("#btn").on('click',function(){
 			 var field= $("input").val();
 			 $('ul').append("<li>"+field+"</li>");
-			})
-			$(field).click(function(){
-			$(this).remove();
+			 $("li").click(function(){
+			$(this).animate({
+						opacity:0.0,
+						paddingLeft: '+=80px',
+						paddingTop: '+=80px'
+					}, 500,function(){
+						$('this').remove();
+					}
+					)
 		});
+			 
+			})
+			
 			});
 			
 	</script>
