@@ -62,11 +62,12 @@
 			$("#btn").on('click',function(){
 			 var field= $("input").val();
 			 $('ul').append("<li>"+field+"</li>");
-			 
 			})
-			
-
+			$(field).click(function(){
+			$(this).remove();
 		});
+			});
+			
 	</script>
 </body>
 </html>
