@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TODO List basic2</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<style>
+	
+
+		ul li{
+			border: 1px solid black;
+			list-style: none;
+			background-color: blue;
+			margin-top: 1px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+    <ul>
+            <li>remove item</li>
+            <li>remove item</li>
+            <li>remove item</li>
+            <li>remove item</li>
+            <li>remove item</li>
+    </ul>
+	</div>
+
+	<script>
+
+		$(document).ready(function(){
+			$('li').on('click',function(){
+				$(this).animate({
+					opacity:0.0,
+					paddingLeft: '+=80px',
+					paddingTop: '+=80px'
+				}, 500,function(){
+					$('this').remove();
+				}
+				)
+
+			})
+		});
+	</script>
+</body>
+</html>
