@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$( window ).on( "load", function() {
-	$("animate").fadeIn("slowly")
+	$("animate").fadeIn("slowly");
 	(this).fadeOut();
 });
 	
